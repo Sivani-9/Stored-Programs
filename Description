@@ -1,0 +1,15 @@
+1. Procedures (Stored Procedures)Definition: 
+      -> A group of SQL statements compiled as a single unit to perform specific tasks, such as complex calculation.
+      -> Invocation: Must be called explicitly by a user or an application using commands like EXECUTE or CALL.
+      -> Parameters: Can accept input and output parameters.
+      -> Returns: Does not return a single value directly like a function, but can return multiple values through output parameters.
+
+2. Functions (User-Defined Functions)Definition:
+      -> A stored program designed to perform a specific calculation or data transformation.
+      -> Invocation: Called explicitly within other SQL queries or expressions, similar to built-in functions like SUM() or UPPER().
+      -> Returns: Must return a value (usually a single value).
+3. TriggersDefinition: 
+      -> A special type of stored procedure that is attached to a specific table or view.
+      -> Invocation: Fired implicitly (automatically) by the database in response to specific events, such as INSERT, UPDATE, or DELETE operations.
+      -> Parameters: Generally cannot accept input parameters directly from the user.
+      -> Returns: Does not return values.
