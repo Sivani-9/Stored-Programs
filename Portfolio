@@ -1,0 +1,354 @@
+create database pro1;
+use pro1;
+create table Products1(proid int primary key, pname varchar(50), price float, rating float, 
+stock int, Publishesd_Date date);
+
+insert into Products1 values (1,'Laptop',65000,4.5,20,'2023-01-10');
+insert into Products1 values (2,'Smartphone',30000,4.3,50,'2023-01-15');
+insert into Products1 values (3,'Headphones',2500,4.1,100,'2023-02-05');
+insert into Products1 values (4,'Keyboard',1500,4.2,80,'2023-02-12');
+insert into Products1 values (5,'Mouse',700,4.0,120,'2023-02-20');
+insert into Products1 values (6,'Tablet',28000,4.4,25,'2023-03-01');
+insert into Products1 values (7,'Smart Watch',8000,4.2,40,'2023-03-08');
+insert into Products1 values (8,'Monitor',12000,4.3,30,'2023-03-15');
+insert into Products1 values (9,'Printer',9000,4.1,18,'2023-03-20');
+insert into Products1 values (10,'Scanner',7000,4.0,22,'2023-03-25');
+
+insert into Products1 values (11,'Router',3500,4.2,60,'2023-04-01');
+insert into Products1 values (12,'External HDD',6000,4.3,35,'2023-04-07');
+insert into Products1 values (13,'Pen Drive',800,4.1,200,'2023-04-10');
+insert into Products1 values (14,'Webcam',2000,4.0,55,'2023-04-15');
+insert into Products1 values (15,'Microphone',3200,4.2,40,'2023-04-20');
+insert into Products1 values (16,'Speaker',4500,4.4,45,'2023-04-25');
+insert into Products1 values (17,'Projector',25000,4.3,12,'2023-05-02');
+insert into Products1 values (18,'Graphics Card',55000,4.6,10,'2023-05-10');
+insert into Products1 values (19,'Motherboard',15000,4.4,15,'2023-05-18');
+insert into Products1 values (20,'Processor',30000,4.5,20,'2023-05-25');
+
+insert into Products1 values (21,'RAM 8GB',3500,4.3,90,'2023-06-01');
+insert into Products1 values (22,'RAM 16GB',6500,4.5,70,'2023-06-05');
+insert into Products1 values (23,'SSD 256GB',4000,4.4,85,'2023-06-10');
+insert into Products1 values (24,'SSD 512GB',7000,4.5,65,'2023-06-15');
+insert into Products1 values (25,'SSD 1TB',12000,4.6,40,'2023-06-20');
+insert into Products1 values (26,'Cooling Fan',1200,4.1,110,'2023-06-25');
+insert into Products1 values (27,'UPS',5000,4.2,30,'2023-07-01');
+insert into Products1 values (28,'Power Bank',1500,4.3,95,'2023-07-05');
+insert into Products1 values (29,'Charger',900,4.0,130,'2023-07-10');
+insert into Products1 values (30,'Data Cable',300,3.9,200,'2023-07-15');
+
+insert into Products1 values (31,'VR Headset',35000,4.5,8,'2023-07-20');
+insert into Products1 values (32,'Game Controller',2500,4.4,60,'2023-07-25');
+insert into Products1 values (33,'Drone',45000,4.6,6,'2023-08-01');
+insert into Products1 values (34,'Action Camera',22000,4.5,14,'2023-08-05');
+insert into Products1 values (35,'Tripod',1800,4.2,70,'2023-08-10');
+insert into Products1 values (36,'Camera Lens',30000,4.4,10,'2023-08-15');
+insert into Products1 values (37,'DSLR Camera',75000,4.7,5,'2023-08-20');
+insert into Products1 values (38,'Laptop Bag',1200,4.1,90,'2023-08-25');
+insert into Products1 values (39,'Desk Lamp',900,4.0,75,'2023-09-01');
+insert into Products1 values (40,'Office Chair',8500,4.3,25,'2023-09-05');
+
+insert into Products1 values (41,'Standing Desk',20000,4.4,12,'2023-09-10');
+insert into Products1 values (42,'Whiteboard',3000,4.1,30,'2023-09-15');
+insert into Products1 values (43,'Projector Screen',4500,4.2,20,'2023-09-20');
+insert into Products1 values (44,'Ethernet Cable',500,4.0,150,'2023-09-25');
+insert into Products1 values (45,'HDMI Cable',600,4.1,140,'2023-10-01');
+insert into Products1 values (46,'Docking Station',7000,4.3,22,'2023-10-05');
+insert into Products1 values (47,'Laptop Stand',1800,4.2,60,'2023-10-10');
+insert into Products1 values (48,'Noise Cancelling Headset',9000,4.5,35,'2023-10-15');
+insert into Products1 values (49,'Smart Light',1200,4.1,80,'2023-10-20');
+insert into Products1 values (50,'WiFi Extender',2800,4.2,45,'2023-10-25');
+
+select * from Products1;
+
+
+create table Customers1(cid int Primary key, cname varchar(50), Ph_No char(10) unique,
+gmail varchar(40) unique, location varchar(50));
+
+insert into Customers1 values (1,'Amit Sharma','9876500001','amit1@gmail.com','Delhi');
+insert into Customers1 values (2,'Priya Reddy','9876500002','priya2@gmail.com','Hyderabad');
+insert into Customers1 values (3,'Rahul Verma','9876500003','rahul3@gmail.com','Mumbai');
+insert into Customers1 values (4,'Sneha Iyer','9876500004','sneha4@gmail.com','Chennai');
+insert into Customers1 values (5,'Arjun Patel','9876500005','arjun5@gmail.com','Ahmedabad');
+insert into Customers1 values (6,'Kiran Kumar','9876500006','kiran6@gmail.com','Bangalore');
+insert into Customers1 values (7,'Neha Singh','9876500007','neha7@gmail.com','Lucknow');
+insert into Customers1 values (8,'Ravi Teja','9876500008','ravi8@gmail.com','Vijayawada');
+insert into Customers1 values (9,'Anjali Gupta','9876500009','anjali9@gmail.com','Pune');
+insert into Customers1 values (10,'Vikram Rao','9876500010','vikram10@gmail.com','Hyderabad');
+
+insert into Customers1 values (11,'Pooja Nair','9876500011','pooja11@gmail.com','Kochi');
+insert into Customers1 values (12,'Suresh Babu','9876500012','suresh12@gmail.com','Guntur');
+insert into Customers1 values (13,'Divya Kapoor','9876500013','divya13@gmail.com','Delhi');
+insert into Customers1 values (14,'Manoj Kumar','9876500014','manoj14@gmail.com','Patna');
+insert into Customers1 values (15,'Lakshmi Devi','9876500015','lakshmi15@gmail.com','Tirupati');
+insert into Customers1 values (16,'Rohit Agarwal','9876500016','rohit16@gmail.com','Jaipur');
+insert into Customers1 values (17,'Swathi Reddy','9876500017','swathi17@gmail.com','Warangal');
+insert into Customers1 values (18,'Aditya Singh','9876500018','aditya18@gmail.com','Bhopal');
+insert into Customers1 values (19,'Kavya Nair','9876500019','kavya19@gmail.com','Trivandrum');
+insert into Customers1 values (20,'Sanjay Patel','9876500020','sanjay20@gmail.com','Surat');
+
+insert into Customers1 values (21,'Meera Iyer','9876500021','meera21@gmail.com','Chennai');
+insert into Customers1 values (22,'Deepak Sharma','9876500022','deepak22@gmail.com','Delhi');
+insert into Customers1 values (23,'Nikhil Jain','9876500023','nikhil23@gmail.com','Indore');
+insert into Customers1 values (24,'Asha Rani','9876500024','asha24@gmail.com','Nagpur');
+insert into Customers1 values (25,'Varun Gupta','9876500025','varun25@gmail.com','Kanpur');
+insert into Customers1 values (26,'Harsha Vardhan','9876500026','harsha26@gmail.com','Hyderabad');
+insert into Customers1 values (27,'Keerthi Reddy','9876500027','keerthi27@gmail.com','Karimnagar');
+insert into Customers1 values (28,'Anil Kumar','9876500028','anil28@gmail.com','Kurnool');
+insert into Customers1 values (29,'Bhavana Das','9876500029','bhavana29@gmail.com','Kolkata');
+insert into Customers1 values (30,'Tarun Mehta','9876500030','tarun30@gmail.com','Chandigarh');
+
+insert into Customers1 values (31,'Siddharth Roy','9876500031','sid31@gmail.com','Kolkata');
+insert into Customers1 values (32,'Gopal Krishna','9876500032','gopal32@gmail.com','Rajahmundry');
+insert into Customers1 values (33,'Praveen Kumar','9876500033','praveen33@gmail.com','Nellore');
+insert into Customers1 values (34,'Jyothi Lakshmi','9876500034','jyothi34@gmail.com','Ongole');
+insert into Customers1 values (35,'Rakesh Singh','9876500035','rakesh35@gmail.com','Varanasi');
+insert into Customers1 values (36,'Pavan Kalyan','9876500036','pavan36@gmail.com','Vijayawada');
+insert into Customers1 values (37,'Naveen Reddy','9876500037','naveen37@gmail.com','Kadapa');
+insert into Customers1 values (38,'Sowmya Rao','9876500038','sowmya38@gmail.com','Mysore');
+insert into Customers1 values (39,'Chitra Devi','9876500039','chitra39@gmail.com','Madurai');
+insert into Customers1 values (40,'Ajay Verma','9876500040','ajay40@gmail.com','Delhi');
+
+insert into Customers1 values (41,'Tejas Patel','9876500041','tejas41@gmail.com','Ahmedabad');
+insert into Customers1 values (42,'Ritu Sharma','9876500042','ritu42@gmail.com','Noida');
+insert into Customers1 values (43,'Karthik Reddy','9876500043','karthik43@gmail.com','Hyderabad');
+insert into Customers1 values (44,'Monika Gupta','9876500044','monika44@gmail.com','Delhi');
+insert into Customers1 values (45,'Sahil Khan','9876500045','sahil45@gmail.com','Bhopal');
+insert into Customers1 values (46,'Riya Das','9876500046','riya46@gmail.com','Kolkata');
+insert into Customers1 values (47,'Mahesh Babu','9876500047','mahesh47@gmail.com','Hyderabad');
+insert into Customers1 values (48,'Vani Iyer','9876500048','vani48@gmail.com','Chennai');
+insert into Customers1 values (49,'Prakash Rao','9876500049','prakash49@gmail.com','Vizag');
+insert into Customers1 values (50,'Nisha Kapoor','9876500050','nisha50@gmail.com','Delhi');
+
+select * from customers1;
+
+create table orders1(order_id int primary key auto_increment, Order_Date date not null, Delivered_Date date,
+No_of_copies int, Review varchar(30), pid int, cid int,
+constraint fk1 foreign key(pid) references  Products1(proid) on delete cascade on update cascade,
+constraint fk2 foreign key(cid) references Customers1(cid) on delete cascade on update cascade);
+
+drop table orders1;
+desc orders;
+/* alter table orders 
+modify column Order_Date date not null; */
+
+
+insert into orders1 values(1,'2024-01-01','2024-01-05',2,'Good',1,5);
+insert into orders1 values(2,'2024-01-02','2024-01-06',1,'Excellent',3,8);
+insert into orders1 values(3,'2024-01-03',NULL,3,'Pending',5,10);
+insert into orders1 values(4,'2024-01-04','2024-01-08',2,'Nice',7,12);
+insert into orders1 values(5,'2024-01-05','2024-01-09',1,'Average',2,4);
+insert into orders1 values(6,'2024-01-06',NULL,4,'Pending',9,7);
+insert into orders1 values(7,'2024-01-07','2024-01-10',1,'Good',10,9);
+insert into orders1 values(8,'2024-01-08','2024-01-11',2,'Nice',11,3);
+insert into orders1 values(9,'2024-01-09',NULL,1,'Pending',12,2);
+insert into orders1 values(10,'2024-01-10','2024-01-15',5,'Excellent',13,6);
+
+insert into orders1 values(11,'2024-01-11','2024-01-16',2,'Good',14,11);
+insert into orders1 values(12,'2024-01-12','2024-01-18',1,'Nice',15,13);
+insert into orders1 values(13,'2024-01-13',NULL,3,'Pending',16,14);
+insert into orders1 values(14,'2024-01-14','2024-01-20',2,'Good',17,15);
+insert into orders1 values(15,'2024-01-15','2024-01-22',1,'Average',18,16);
+insert into orders1 values(16,'2024-01-16',NULL,4,'Pending',19,17);
+insert into orders1 values(17,'2024-01-17','2024-01-25',2,'Nice',20,18);
+insert into orders1 values(18,'2024-01-18','2024-01-27',1,'Good',21,19);
+insert into orders1 values(19,'2024-01-19',NULL,3,'Pending',22,20);
+insert into orders1 values(20,'2024-01-20','2024-01-28',2,'Excellent',23,21);
+
+insert into orders1 values(21,'2024-01-21','2024-01-29',1,'Nice',24,22);
+insert into orders1 values(22,'2024-01-22',NULL,2,'Pending',25,23);
+insert into orders1 values(23,'2024-01-23','2024-01-30',1,'Good',26,24);
+insert into orders1 values(24,'2024-01-24','2024-02-01',3,'Nice',27,25);
+insert into orders1 values(25,'2024-01-25',NULL,2,'Pending',28,26);
+insert into orders1 values(26,'2024-01-26','2024-02-02',1,'Good',29,27);
+insert into orders1 values(27,'2024-01-27','2024-02-03',4,'Excellent',30,28);
+insert into orders1 values(28,'2024-01-28',NULL,2,'Pending',31,29);
+insert into orders1 values(29,'2024-01-29','2024-02-05',1,'Nice',32,30);
+insert into orders1 values(30,'2024-01-30','2024-02-06',3,'Good',33,31);
+
+insert into orders1 values(31,'2024-02-01',NULL,2,'Pending',34,32);
+insert into orders1 values(32,'2024-02-02','2024-02-07',1,'Nice',35,33);
+insert into orders1 values(33,'2024-02-03','2024-02-08',2,'Good',36,34);
+insert into orders1 values(34,'2024-02-04',NULL,3,'Pending',37,35);
+insert into orders1 values(35,'2024-02-05','2024-02-10',1,'Excellent',38,36);
+insert into orders1 values(36,'2024-02-06','2024-02-11',2,'Good',39,37);
+insert into orders1 values(37,'2024-02-07',NULL,4,'Pending',40,38);
+insert into orders1 values(38,'2024-02-08','2024-02-13',1,'Nice',41,39);
+insert into orders1 values(39,'2024-02-09','2024-02-14',2,'Good',42,40);
+insert into orders1 values(40,'2024-02-10',NULL,3,'Pending',43,41);
+
+insert into orders1 values(41,'2024-02-11','2024-02-15',2,'Nice',44,42);
+insert into orders1 values(42,'2024-02-12','2024-02-16',1,'Good',45,43);
+insert into orders1 values(43,'2024-02-13',NULL,3,'Pending',46,44);
+insert into orders1 values(44,'2024-02-14','2024-02-18',1,'Nice',47,45);
+insert into orders1 values(45,'2024-02-15','2024-02-19',2,'Good',48,46);
+insert into orders1 values(46,'2024-02-16',NULL,3,'Pending',49,47);
+insert into orders1 values(47,'2024-02-17','2024-02-20',2,'Excellent',50,48);
+insert into orders1 values(48,'2024-02-18','2024-02-22',1,'Good',2,49);
+insert into orders1 values(49,'2024-02-19',NULL,4,'Pending',4,50);
+insert into orders1 values(50,'2024-02-20','2024-02-25',2,'Nice',6,1);
+
+insert into orders1 values(51,'2024-02-21','2024-02-26',1,'Good',8,2);
+insert into orders1 values(52,'2024-02-22',NULL,3,'Pending',10,3);
+insert into orders1 values(53,'2024-02-23','2024-02-28',2,'Nice',12,4);
+insert into orders1 values(54,'2024-02-24','2024-02-29',1,'Good',14,5);
+insert into orders1 values(55,'2024-02-25',NULL,3,'Pending',16,6);
+insert into orders1 values(56,'2024-02-26','2024-03-01',2,'Nice',18,7);
+insert into orders1 values(57,'2024-02-27','2024-03-02',1,'Good',20,8);
+insert into orders1 values(58,'2024-02-28',NULL,2,'Pending',22,9);
+insert into orders1 values(59,'2024-03-01','2024-03-05',3,'Excellent',24,10);
+insert into orders1 values(60,'2024-03-02','2024-03-06',1,'Good',26,11);
+
+insert into orders1 values(61,'2024-03-03',NULL,2,'Pending',28,12);
+insert into orders1 values(62,'2024-03-04','2024-03-07',1,'Nice',30,13);
+insert into orders1 values(63,'2024-03-05','2024-03-08',3,'Good',32,14);
+insert into orders1 values(64,'2024-03-06',NULL,2,'Pending',34,15);
+insert into orders1 values(65,'2024-03-07','2024-03-10',1,'Nice',36,16);
+insert into orders1 values(66,'2024-03-08','2024-03-11',4,'Excellent',38,17);
+insert into orders1 values(67,'2024-03-09',NULL,2,'Pending',40,18);
+insert into orders1 values(68,'2024-03-10','2024-03-13',1,'Good',42,19);
+insert into orders1 values(69,'2024-03-11','2024-03-14',2,'Nice',44,20);
+insert into orders1 values(70,'2024-03-12',NULL,3,'Pending',46,21);
+
+insert into orders1 values(71,'2024-03-13','2024-03-16',1,'Good',48,22);
+insert into orders1 values(72,'2024-03-14','2024-03-17',2,'Nice',50,23);
+insert into orders1 values(73,'2024-03-15',NULL,4,'Pending',3,24);
+insert into orders1 values(74,'2024-03-16','2024-03-18',1,'Good',5,25);
+insert into orders1 values(75,'2024-03-17','2024-03-19',2,'Excellent',7,26);
+insert into orders1 values(76,'2024-03-18',NULL,3,'Pending',9,27);
+insert into orders1 values(77,'2024-03-19','2024-03-21',1,'Nice',11,28);
+insert into orders1 values(78,'2024-03-20','2024-03-22',2,'Good',13,29);
+insert into orders1 values(79,'2024-03-21',NULL,4,'Pending',15,30);
+insert into orders1 values(80,'2024-03-22','2024-03-25',1,'Nice',17,31);
+
+insert into orders1 values(81,'2024-03-23','2024-03-26',2,'Good',19,32);
+insert into orders1 values(82,'2024-03-24',NULL,3,'Pending',21,33);
+insert into orders1 values(83,'2024-03-25','2024-03-27',1,'Nice',23,34);
+insert into orders1 values(84,'2024-03-26','2024-03-28',2,'Good',25,35);
+insert into orders1 values(85,'2024-03-27',NULL,3,'Pending',27,36);
+insert into orders1 values(86,'2024-03-28','2024-03-30',1,'Nice',29,37);
+insert into orders1 values(87,'2024-03-29','2024-03-31',2,'Excellent',31,38);
+insert into orders1 values(88,'2024-03-30',NULL,4,'Pending',33,39);
+insert into orders1 values(89,'2024-03-31','2024-04-02',1,'Good',35,40);
+insert into orders1 values(90,'2024-04-01','2024-04-03',2,'Nice',37,41);
+
+insert into orders1 values(91,'2024-04-02',NULL,3,'Pending',39,42);
+insert into orders1 values(92,'2024-04-03','2024-04-05',1,'Good',41,43);
+insert into orders1 values(93,'2024-04-04','2024-04-06',2,'Nice',43,44);
+insert into orders1 values(94,'2024-04-05',NULL,4,'Pending',45,45);
+insert into orders1 values(95,'2024-04-06','2024-04-08',1,'Good',47,46);
+insert into orders1 values(96,'2024-04-07','2024-04-09',2,'Nice',49,47);
+insert into orders1 values(97,'2024-04-08',NULL,3,'Pending',1,48);
+insert into orders1 values(98,'2024-04-09','2024-04-11',1,'Good',6,49);
+insert into orders1 values(99,'2024-04-10','2024-04-12',2,'Excellent',8,50);
+insert into orders1 values(100,'2024-04-11',NULL,3,'Pending',10,1);
+
+
+select * from orders1;
+
+
+--	trigger to reduce stock value automatically if a customer purchases a product, and throws error if it's going out of stock
+
+delimiter ^^
+
+create trigger t1
+before insert on orders1
+for each row
+begin
+    declare s int;
+
+    select stock into s
+    from Products1
+    where proid = new.pid;
+
+    if new.No_of_copies > s then
+        signal sqlstate '45000'
+        set message_text = 'Not enough stock';
+    else
+        update Products1
+        set stock = stock - new.No_of_copies
+        where proid = new.pid;
+    end if;
+end ^^
+
+delimiter ;
+
+/*
+signal sqlstate '45000'
+means	Stop the operation and raise a custom error.
+
+set message_text = 'Not enough stock'
+This sets the error message that will be shown to the user.
+*/
+
+
+--	procedure to insert few values into orders1 table 
+
+delimiter $$
+create procedure p1(in Order_date date, in Delivered_Date date, in No_of_Copies int,
+in Review varchar(50), in pid int, in customer_Id int)
+begin
+	
+	insert into orders1(Order_Date, Delivered_Date, No_of_copies, Review, pid, cid)
+    values(Order_Date, deliverED_date, no_Of_copies, review , pid, customer_id);
+	select * from products1;
+	
+end $$
+delimiter ;
+drop procedure p1;
+
+
+--	procedure to count number of products purchased by a specific customer
+
+delimiter %%
+create procedure p2(in a varchar(50), out b int)
+begin
+	Select count(*) into b 
+    from orders1 as o join customers1 as c
+    on o.cid = c.cid
+    where c.cname = a;
+end %%
+delimiter ;
+
+call p2('Neha Singh',@c1);
+select @c1;
+
+
+--	function to display total price collected in a specific year on a product
+
+delimiter !!
+create function f1(a varchar(50), b year)
+returns varchar(60) 
+deterministic
+begin
+	declare fl1 float;
+    declare fl2 float;
+	Select coalesce((sum(price*no_of_copies)),0) ,
+    coalesce(avg(price*no_of_copies),0) into fl1, fl2
+    from orders1 as o join products1 as p
+    on o.pid = p.proid
+    where p.pname = a and year(o.order_date) = b;
+    return concat('Total -> ',fl1,' Average -> ', fl2, ' in ', b , ' year.');
+end !!
+delimiter ;
+
+	
+--	Return customer names who ordered a product using a function
+
+delimiter ##
+create function f2(a varchar(40))
+returns varchar(1000)
+reads sql data
+begin
+	declare s1 varchar(1000);	--	declaring a variable name
+	select coalesce(group_concat(cname),'No customers') into s1 
+    from orders1 as o join customers1 as c
+    on o.cid = c.cid
+    join products1 as p
+    on o.pid = p.proid
+    where p.pname = a;
+    
+    return s1;
+end ##
+delimiter ;
+drop function f2;
+
